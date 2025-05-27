@@ -1,0 +1,17 @@
+# For details & more options, see documentation/AppManifests.md in firmware repo
+
+App(
+    appid="friday_night_flippin",  # Must be unique
+    name="App friday_night_flippin",  # Displayed in menus
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="friday_night_flippin_app",
+    stack_size=2 * 1024,
+    fap_category="Examples",
+    # Optional values
+    # fap_version="0.1",
+    fap_icon="friday_night_flippin.png",  # 10x10 1-bit PNG
+    # fap_description="A simple app",
+    # fap_author="J. Doe",
+    # fap_weburl="https://github.com/user/friday_night_flippin",
+    fap_icon_assets="images",  # Image assets to compile for this application
+)
